@@ -24,3 +24,11 @@
 >该命令会将所有文件编译到 `dist` 目录下
 
 # 截图
+
+![登录页](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/login.png)
+![工作台](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/workplace.png)
+![消息中心](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/message.png)
+![组织机构管理](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/organization.png)
+![角色管理](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/role.png)
+![用户管理](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/user.png)
+![修改用户](https://github.com/zhang8043/abp-vue-antd/blob/master/public/preview/edituser.png)
