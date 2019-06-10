@@ -19,9 +19,9 @@ import { on, off } from '@/utils/tools'
 export default {
   name: 'OrgView',
   props: {
-    data: object,
+    data: Object,
     zoomHandled: {
-      type: number,
+      type: Number,
       default: 1
     }
   },
