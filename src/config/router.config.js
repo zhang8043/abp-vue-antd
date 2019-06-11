@@ -120,6 +120,21 @@ export const asyncRouterMap = [
         ]
       },
       {
+        path: '/wechat',
+        name: 'wechat',
+        component: PageView,
+        redirect: '/wechat',
+        meta: { title: '微信管理', icon: 'setting', permission: 'Pages' },
+        children: [
+          {
+            path: '/wechat/wechat-config',
+            name: 'wechat-config',
+            component: () => import('@/views/wechat/wechat-config/WeChatConfig'),
+            meta: { title: '微信设置', hideHeader: true, permission: 'Pages' },
+          },
+        ]
+      },
+      {
         path: '/admin',
         name: 'admin',
         component: PageView,
@@ -143,6 +158,43 @@ export const asyncRouterMap = [
             name: 'user',
             component: () => import('@/views/admin/users/UserList'),
             meta: { title: '用户管理', hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/language',
+            name: 'language',
+            component: () => import('@/views/admin/languages/LanguagesList'),
+            meta: { title: '语言列表', hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/languagetext/:key',
+            name: 'languagetext',
+            hidden: true,
+            component: () => import('@/views/admin/languages/LanguagesTextList'),
+            meta: { title: '语言文本', hidden: true, hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/auditlog',
+            name: 'auditlog',
+            component: () => import('@/views/admin/auditlogs/AuditlogList'),
+            meta: { title: '审计日志', hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/subscription',
+            name: 'subscription',
+            component: () => import('@/views/admin/subscription/Subscription'),
+            meta: { title: '订阅', hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/ui-customization',
+            name: 'ui-customization',
+            component: () => import('@/views/admin/ui-customization/UiCustomization'),
+            meta: { title: 'UI设置', hideHeader: true, permission: 'Pages' },
+          },
+          {
+            path: '/admin/setting',
+            name: 'setting',
+            component: () => import('@/views/admin/settings/Setting'),
+            meta: { title: '设置', hideHeader: true, permission: 'Pages' },
           },
         ]
       },
